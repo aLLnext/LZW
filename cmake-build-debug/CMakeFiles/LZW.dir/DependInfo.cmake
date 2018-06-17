@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/toxaxab/CLionProjects/LZW/bits.c" "/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/LZW.dir/bits.c.o"
   "/home/toxaxab/CLionProjects/LZW/coder.c" "/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/LZW.dir/coder.c.o"
   "/home/toxaxab/CLionProjects/LZW/decoder.c" "/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/LZW.dir/decoder.c.o"
   "/home/toxaxab/CLionProjects/LZW/main.c" "/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/LZW.dir/main.c.o"

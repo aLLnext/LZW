@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/toxaxab/CLionProjects/LZW/bits.c
+stdio.h
+-
+stdlib.h
+-
+bits.h
+/home/toxaxab/CLionProjects/LZW/bits.h
+
 /home/toxaxab/CLionProjects/LZW/bits.h
 bits/types/FILE.h
 -

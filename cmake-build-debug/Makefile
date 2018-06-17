@@ -123,6 +123,33 @@ LZW/fast:
 	$(MAKE) -f CMakeFiles/LZW.dir/build.make CMakeFiles/LZW.dir/build
 .PHONY : LZW/fast
 
+bits.o: bits.c.o
+
+.PHONY : bits.o
+
+# target to build an object file
+bits.c.o:
+	$(MAKE) -f CMakeFiles/LZW.dir/build.make CMakeFiles/LZW.dir/bits.c.o
+.PHONY : bits.c.o
+
+bits.i: bits.c.i
+
+.PHONY : bits.i
+
+# target to preprocess a source file
+bits.c.i:
+	$(MAKE) -f CMakeFiles/LZW.dir/build.make CMakeFiles/LZW.dir/bits.c.i
+.PHONY : bits.c.i
+
+bits.s: bits.c.s
+
+.PHONY : bits.s
+
+# target to generate assembly for a file
+bits.c.s:
+	$(MAKE) -f CMakeFiles/LZW.dir/build.make CMakeFiles/LZW.dir/bits.c.s
+.PHONY : bits.c.s
+
 coder.o: coder.c.o
 
 .PHONY : coder.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... LZW"
+	@echo "... bits.o"
+	@echo "... bits.i"
+	@echo "... bits.s"
 	@echo "... coder.o"
 	@echo "... coder.i"
 	@echo "... coder.s"

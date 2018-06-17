@@ -4,7 +4,8 @@
 
 #ifndef TASK4B_BITS_H
 #define TASK4B_BITS_H
-#define BUFF_SIZE 20
+#define BUFF_SIZE 16
+
 
 #include <bits/types/FILE.h>
 #include <stdio.h>

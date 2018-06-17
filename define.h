@@ -9,17 +9,17 @@
 
 #endif //LZW_DEFINE_H
 
-#define n 260
-#define BUF_SIZE 10
-#define MAX_SIZE 1000
+#define n 50000
+#define BUF_SIZE 500000
+#define MAX_SIZE 500000
 #define SIZE_MASK 4
 #define DEFAULT_K 256
-#define DEFAULT_B 7
+#define DEFAULT_B 15
 #define DEFAULT_P2 256
-#define inputCODER "test.pdf"
+#define inputCODER "test.bmp"
 #define outputCODER "code.txt"
 #define inputDECODER "code.txt"
-#define outputDECODER "output.txt"
+#define outputDECODER "out.bmp"
 
 //coder
 

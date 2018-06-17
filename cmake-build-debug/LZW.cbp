@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/toxaxab/CLionProjects/LZW/bits.c">
+			<Option target="LZW"/>
+		</Unit>
 		<Unit filename="/home/toxaxab/CLionProjects/LZW/bits.h">
 			<Option target="LZW"/>
 		</Unit>

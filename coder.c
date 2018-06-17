@@ -50,6 +50,16 @@ void initializeHEAPCODER(t_node_coder *Head){
     }
 }
 
+void print_code(int code, t_stream* stream){
+    for (int i = DEFAULT_B; i >= 0; --i) {
+        put_bit(((code & (1 << i))!= 0), stream);
+    }
+}
+
+size_t read_text(void *ptr, size_t so, size_t count, FILE *file){
+    return fread(ptr,so,count,file);
+}
+
 int code() {
     unsigned char head = 0;
     int len = 0;
@@ -68,52 +78,35 @@ int code() {
     //int countb = DEFAULT_B;
     //int p2 = DEFAULT_P2;
     static unsigned char buffer[BUF_SIZE];
-    fread(&head, 1, 1, inp);
+    read_text(&head, 1, 1, inp);
     curr = curr->CHILD[head];
     while(!feof(inp)){
         memset(buffer, '\0', BUF_SIZE);
-        len = fread(buffer, 1, BUF_SIZE,inp);
+        len = read_text(buffer, 1, BUF_SIZE, inp);
         for (int i = 0; i < len; ++i) {
             if(checkbit(curr,buffer[i])){
                 curr = curr->CHILD[buffer[i]];
                 continue;
             }
             if(k < n) {
-                fprintf(out,"%d ", curr->code);
-                //printf("%d ", curr->code);
-                //fflush(stdout);
+                print_code(curr->code, stream_out);
                 /*if(k > p2) {
                     p2 <<= 1;
                     ++countb;
                 }*/
-                /*for (int j = countb; j >= 0; --j) {
-                    put_bit(((curr->code & (1 << j)) != 0),stream_out);
-                }*/
-                fflush_bit(stream_out);
                 setbit(curr, buffer[i]);
                 curr = curr->CHILD[buffer[i]] = new_node();
                 curr->code = k++;
                 curr = root->CHILD[buffer[i]];
                 continue;
             }
-            fprintf(out,"%d ", curr->code);
-            //printf("%d ", curr->code);
-            //fflush(stdout);
-            /*for (int j = countb; j >= 0; --j) {
-                put_bit(((curr->code & (1 << j)) != 0),stream_out);
-            }*/
-            fflush_bit(stream_out);
+            print_code(curr->code, stream_out);
             del_node();
             root = new_node();
             initializeHEAPCODER(root);
             setbit(root,buffer[i]);
             curr = root->CHILD[buffer[i]];
-            fprintf(out,"%d ", curr->code);
-            //printf("%d ", curr->code);
-            //fflush(stdout);
-            /*for (int j = countb; j >= 0; --j) {
-                put_bit(((curr->code & (1 << j)) != 0),stream_out);
-            }*/
+            print_code(curr->code, stream_out);
             k = DEFAULT_K;
             //p2 = DEFAULT_P2;
             //countb = DEFAULT_B;
@@ -121,10 +114,9 @@ int code() {
         }
     }
     if(curr->code != 0) {
-        fprintf(out, "%d ", curr->code);
-        //printf("%d ", curr->code);
-        //fflush(stdout);
+        print_code(curr->code, stream_out);
     }
+    fclose_bit(stream_out);
     fclose(inp);
     fclose(out);
     return 0;

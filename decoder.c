@@ -27,24 +27,6 @@ void del_Heap() {
     memset(HEAP_D, 0, MAX_SIZE * sizeof(t_node_decoder));
 }
 
-/*void print_pairs(int pos){
-    static char CUR[BUF_SIZE];
-    memset(CUR, '\0', BUF_SIZE);
-    int k = pos;
-    int i = 0;
-    CUR[i] = HEAP_D[pos].val;
-    while (pos != HEAP_D[pos].val){
-        pos = HEAP_D[pos].parent;
-        CUR[++i] = HEAP_D[pos].val;
-    }
-    printf("%d: ",k);
-    for (int j = i; j >= 0; --j) {
-        putc(CUR[j],stdout);
-        fflush(stdout);
-    }
-    printf("\n");
-}*/
-
 int get_value(long long pos){
     static char CUR[BUF_SIZE];
     memset(CUR, '\0', BUF_SIZE);
@@ -66,15 +48,21 @@ void print_symbol(long long pos) {
         pos = HEAP_D[pos].parent;
         CUR[++i] = HEAP_D[pos].val;
     }
-    /*for (int k = i; k >= 0; --k) {
-        for (int j = DEFAULT_B; j >= 0; --j) {
-            put_bit(((CUR[k] & (1 << i)) != 0), stream_out);
-        }
-    }*/
-    //fflush_bit(stream_out);
     for (int j = i; j >= 0; --j) {
         fputc(CUR[j],out);
         fflush(out);
+    }
+}
+
+void read_code(unsigned int *cur, t_stream *stream) {
+    *cur = 0;
+    int bit = 0;
+    for (int i = DEFAULT_B; i >= 0; --i) {
+        bit = fread_bit(stream);
+        if (bit == 1)
+            *cur |= 1 << i;
+        else
+            *cur &= ~(1 << i);
     }
 }
 
@@ -87,35 +75,16 @@ int decode() {
     unsigned int current = 0;
     initializeHEAP();
     int k = DEFAULT_K;
-    fscanf(inp, "%d", &current);
+    read_code(&current, stream_in);
+    print_symbol(current);
     //int bit;
     //int countb = 7;
     //int p2 = 256;
-    /*for (int i = countb; i >= 0; --i) {
-        bit = fread_bit(stream_in);
-        if (bit == 1)
-            current |= 1 << i;
-        else
-            current &= ~(1 << i);
-        put_bit(bit, stream_out);
-    }*/
-    fprintf(out,"%c", current);
-    fflush(out);
     start = current;
     while (1) {
-        if (fscanf(inp, "%d", &current) != 1)
+        if(bit_feof(stream_in) == EOF)
             break;
-        /*if(bit_feof(stream_in) == EOF)
-            break;
-        current = 0;
-        for (int i = countb; i >= 0; --i) {
-            bit = fread_bit(stream_in);
-            if (bit == 1)
-                current |= 1 << i;
-            else
-                current &= ~(1 << i);
-        }*/
-
+        read_code(&current, stream_in);
         if(k <= n){
             if(current < k)
                 HEAP_D[k].val = get_value(current);
@@ -133,7 +102,7 @@ int decode() {
         start = current;
         k = DEFAULT_K;
     }
-    //fflush_bit(stream_out);
+    fclose_bit(stream_out);
     fclose(inp);
     fclose(out);
     printf("OK\n");

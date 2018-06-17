@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LZW.dir/coder.c.o"
   "CMakeFiles/LZW.dir/decoder.c.o"
   "CMakeFiles/LZW.dir/main.c.o"
+  "CMakeFiles/LZW.dir/bits.c.o"
   "LZW.pdb"
   "LZW"
 )
