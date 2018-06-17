@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/LZW.dir/coder.c.o CMakeFiles/LZW.dir/decoder.c.o CMakeFiles/LZW.dir/main.c.o  -o LZW -Wl,-rpath,/home/toxaxab/CLionProjects/bits/cmake-build-debug /home/toxaxab/CLionProjects/bits/cmake-build-debug/libbits.so 

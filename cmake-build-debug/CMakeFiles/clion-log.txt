@@ -1,0 +1,4 @@
+/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/toxaxab/CLionProjects/LZW
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/toxaxab/CLionProjects/LZW/cmake-build-debug

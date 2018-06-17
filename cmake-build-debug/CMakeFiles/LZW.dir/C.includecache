@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/toxaxab/CLionProjects/LZW/bits.h
+bits/types/FILE.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+/home/toxaxab/CLionProjects/LZW/coder.c
+stdio.h
+-
+ctype.h
+-
+stdlib.h
+-
+memory.h
+-
+define.h
+/home/toxaxab/CLionProjects/LZW/define.h
+
+/home/toxaxab/CLionProjects/LZW/decoder.c
+stdio.h
+-
+memory.h
+-
+define.h
+/home/toxaxab/CLionProjects/LZW/define.h
+
+/home/toxaxab/CLionProjects/LZW/define.h
+stdio.h
+-
+memory.h
+-
+bits.h
+/home/toxaxab/CLionProjects/LZW/bits.h
+
+/home/toxaxab/CLionProjects/LZW/main.c
+
