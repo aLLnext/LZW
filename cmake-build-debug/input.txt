@@ -1,68 +1,123 @@
+//
+// Created by toxaxab on 01.06.18.
+//
 #include <stdio.h>
-#include <stdlib.h>
-#include "bits.h"
+#include <memory.h>
+#include "define.h"
 
-t_stream *fopen_bit(FILE *file, size_t size) {
-    t_stream *tmp = (t_stream *) malloc(sizeof(t_stream));
-    tmp->fid = file;
-    tmp->ind = 0;
-    tmp->len = size;
-    tmp->offset = 7;
-    return tmp;
-}
+typedef struct t_node_decoder {
+    long long parent;
+    unsigned char val;
+} t_node_decoder;
+t_node_decoder HEAP_D[MAX_SIZE];
 
-void fflush_bit(t_stream *stream) {
-    int add = 0;
-    if (stream->offset != 7)
-        ++add;
-    fwrite(stream->buff, 1, stream->ind + add, stream->fid);
-    fflush(stream->fid);
-    stream->offset = 7;
-    stream->ind = 0;
-}
 
-void fclose_bit(t_stream *stream){
-    fflush_bit(stream);
-    fclose(stream->fid);
-    stream->ind = 0;
-    stream->offset = 0;
-    stream->len = 0;
-    //free(stream);
-}
-
-int put_bit(BYTE bit, t_stream *stream) {
-    if (bit != 0 && bit != 1)
-        return EOF;
-    if (bit == 1)
-        stream->buff[stream->ind] |= 1 << stream->offset;
-    else
-        stream->buff[stream->ind] &= ~(1 << stream->offset);
-    --(stream->offset);
-    if (stream->offset == -1) {
-        stream->offset = 7;
-        ++(stream->ind);
+FILE *out;
+FILE *inp;
+t_stream *stream_in;
+t_stream *stream_out;
+int countb = DEFAULT_B;
+int p2 = DEFAULT_P2;
+int k = DEFAULT_K;
+void initializeHEAP() {
+    for (int i = 0; i < 256; ++i) {
+        HEAP_D[i].val = i;
+        HEAP_D[i].parent = i;
     }
-    if (stream->ind == stream->len)
-        fflush_bit(stream);
 }
 
-int fread_bit(t_stream *stream) {
-    if (stream->ind == stream->len) {
-        stream->len = fread(stream->buff, 1, BUFF_SIZE, stream->fid);
-        stream->ind = 0;
-    }
-    if (stream->len == 0)
-        return EOF;
-    int bit = (stream->buff[stream->ind] & (1 << stream->offset)) != 0;
-    --(stream->offset);
-    if (stream->offset == -1) {
-        stream->offset = 7;
-        ++(stream->ind);
-    }
-    return bit;
+void del_Heap() {
+    memset(HEAP_D, 0, MAX_SIZE * sizeof(t_node_decoder));
 }
 
-int bit_feof(t_stream *stream){
-    if(feof(stream->fid) && (stream->ind == stream->len))
-        return EOF;
+int get_value(long long pos){
+    static char CUR[BUF_SIZE];
+    memset(CUR, '\0', BUF_SIZE);
+    int i = 0;
+    CUR[i] = HEAP_D[pos].val;
+    while (pos != HEAP_D[pos].val){
+        pos = HEAP_D[pos].parent;
+        CUR[++i] = HEAP_D[pos].val;
+    }
+    return CUR[i];
+}
+
+void print_symbol(long long pos) {
+    static char CUR[BUF_SIZE];
+    memset(CUR, '\0', BUF_SIZE);
+    int i = 0;
+    CUR[i] = HEAP_D[pos].val;
+    while (pos != HEAP_D[pos].val){
+        pos = HEAP_D[pos].parent;
+        CUR[++i] = HEAP_D[pos].val;
+    }
+    for (int j = i; j >= 0; --j) {
+        fputc(CUR[j],out);
+    }
+}
+
+int read_code(unsigned int *cur, t_stream *stream, int count_size) {
+    printf("Rbits : %d\n", countb + 1);
+    *cur = 0;
+    int bit = 0;
+    for (int i = countb; i >= 0; --i) {
+        bit = fread_bit(stream);
+        //printf("%d",bit);
+        if (bit == 1)
+            *cur |= 1 << i;
+        else if(bit == 0)
+            *cur &= ~(1 << i);
+        else return 1;
+    }
+    //printf(" %c\n",*cur);
+}
+
+int decode() {
+    inp = fopen(inputDECODER, "rb");
+    out = fopen(outputDECODER, "wb");
+    stream_in = fopen_bit(inp, 0);
+    stream_out = fopen_bit(out, BUFF_SIZE);
+    int start = 0;
+    unsigned int current = 0;
+    initializeHEAP();
+    while (1) {
+        if(bit_feof(stream_in) == EOF)
+            break;
+        if(read_code(&current, stream_in, countb) == 1){
+            break;
+        }
+        if(countb == 7){
+            print_symbol(current);
+            start = current;
+            p2 <<= 1;
+            ++countb;
+            continue;
+        }
+        if(k < n){
+            if(current < k)
+                HEAP_D[k].val = get_value(current);
+            else
+                HEAP_D[k].val = get_value(start);
+            HEAP_D[k].parent = start;
+            start = current;
+            print_symbol(current);
+            k++;
+            if(k >= p2) {
+                p2 <<= 1;
+                ++countb;
+            }
+            continue;
+        }
+        del_Heap();
+        initializeHEAP();
+        countb = DEFAULT_B;
+        p2 = DEFAULT_P2;
+        k = DEFAULT_K;
+        print_symbol(current);
+        start = current;
+    }
+    fclose_bit(stream_out);
+    fclose(inp);
+    fclose(out);
+    return 0;
 }

@@ -50,8 +50,9 @@ void initializeHEAPCODER(t_node_coder *Head){
     }
 }
 
-void print_code(int code, t_stream* stream){
-    for (int i = DEFAULT_B; i >= 0; --i) {
+void print_code(int code, t_stream* stream, int count_size){
+    //printf("bits: %d\n",count_size + 1);
+    for (int i = count_size; i >= 0; --i) {
         put_bit(((code & (1 << i))!= 0), stream);
     }
 }
@@ -75,8 +76,8 @@ int code() {
     initializeHEAPCODER(root);
     curr = root;
     int k = DEFAULT_K;
-    //int countb = DEFAULT_B;
-    //int p2 = DEFAULT_P2;
+    int countb = DEFAULT_B;
+    int p2 = DEFAULT_P2;
     static unsigned char buffer[BUF_SIZE];
     read_text(&head, 1, 1, inp);
     curr = curr->CHILD[head];
@@ -89,32 +90,36 @@ int code() {
                 continue;
             }
             if(k < n) {
-                print_code(curr->code, stream_out);
-                /*if(k > p2) {
+                if(k > p2) {
                     p2 <<= 1;
                     ++countb;
-                }*/
+                }
+                print_code(curr->code, stream_out, countb);
                 setbit(curr, buffer[i]);
                 curr = curr->CHILD[buffer[i]] = new_node();
                 curr->code = k++;
                 curr = root->CHILD[buffer[i]];
                 continue;
             }
-            print_code(curr->code, stream_out);
+            print_code(curr->code, stream_out, countb);
             del_node();
             root = new_node();
             initializeHEAPCODER(root);
             setbit(root,buffer[i]);
             curr = root->CHILD[buffer[i]];
-            print_code(curr->code, stream_out);
+            print_code(curr->code, stream_out, countb);
             k = DEFAULT_K;
-            //p2 = DEFAULT_P2;
-            //countb = DEFAULT_B;
+            p2 = DEFAULT_P2;
+            countb = DEFAULT_B;
             curr = root;
         }
     }
     if(curr->code != 0) {
-        print_code(curr->code, stream_out);
+        if(k > p2) {
+            p2 <<= 1;
+            ++countb;
+        }
+        print_code(curr->code, stream_out, countb);
     }
     fclose_bit(stream_out);
     fclose(inp);

@@ -16,6 +16,9 @@ FILE *out;
 FILE *inp;
 t_stream *stream_in;
 t_stream *stream_out;
+int countb = DEFAULT_B;
+int p2 = DEFAULT_P2;
+int k = DEFAULT_K;
 void initializeHEAP() {
     for (int i = 0; i < 256; ++i) {
         HEAP_D[i].val = i;
@@ -50,20 +53,23 @@ void print_symbol(long long pos) {
     }
     for (int j = i; j >= 0; --j) {
         fputc(CUR[j],out);
-        fflush(out);
     }
 }
 
-void read_code(unsigned int *cur, t_stream *stream) {
+int read_code(unsigned int *cur, t_stream *stream, int count_size) {
+    //printf("Rbits : %d\n", countb + 1);
     *cur = 0;
     int bit = 0;
-    for (int i = DEFAULT_B; i >= 0; --i) {
+    for (int i = countb; i >= 0; --i) {
         bit = fread_bit(stream);
+        //printf("%d",bit);
         if (bit == 1)
             *cur |= 1 << i;
-        else
+        else if(bit == 0)
             *cur &= ~(1 << i);
+        else return 1;
     }
+    //printf(" %c\n",*cur);
 }
 
 int decode() {
@@ -74,18 +80,20 @@ int decode() {
     int start = 0;
     unsigned int current = 0;
     initializeHEAP();
-    int k = DEFAULT_K;
-    read_code(&current, stream_in);
-    print_symbol(current);
-    //int bit;
-    //int countb = 7;
-    //int p2 = 256;
-    start = current;
     while (1) {
         if(bit_feof(stream_in) == EOF)
             break;
-        read_code(&current, stream_in);
-        if(k <= n){
+        if(read_code(&current, stream_in, countb) == 1){
+            break;
+        }
+        if(countb == 7){
+            print_symbol(current);
+            start = current;
+            p2 <<= 1;
+            ++countb;
+            continue;
+        }
+        if(k < n){
             if(current < k)
                 HEAP_D[k].val = get_value(current);
             else
@@ -94,17 +102,22 @@ int decode() {
             start = current;
             print_symbol(current);
             k++;
+            if(k >= p2) {
+                p2 <<= 1;
+                ++countb;
+            }
             continue;
         }
         del_Heap();
         initializeHEAP();
+        countb = DEFAULT_B;
+        p2 = DEFAULT_P2;
+        k = DEFAULT_K;
         print_symbol(current);
         start = current;
-        k = DEFAULT_K;
     }
     fclose_bit(stream_out);
     fclose(inp);
     fclose(out);
-    printf("OK\n");
     return 0;
 }

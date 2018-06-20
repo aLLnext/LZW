@@ -10,33 +10,33 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_360a2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_360a2.dir/build.make CMakeFiles/cmTC_360a2.dir/build
-make[1]: вход в каталог «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_360a2.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_360a2.dir/testCCompiler.c.o   -c /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_360a2
-/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_360a2.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_360a2.dir/testCCompiler.c.o  -o cmTC_360a2 
-make[1]: выход из каталога «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_8d3eb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8d3eb.dir/build.make CMakeFiles/cmTC_8d3eb.dir/build
+make[1]: вход в каталог «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8d3eb.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8d3eb.dir/testCCompiler.c.o   -c "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c"
+Linking C executable cmTC_8d3eb
+/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d3eb.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_8d3eb.dir/testCCompiler.c.o  -o cmTC_8d3eb 
+make[1]: выход из каталога «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b5d5b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b5d5b.dir/build.make CMakeFiles/cmTC_b5d5b.dir/build
-make[1]: вход в каталог «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_b5d5b.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_b5d5b.dir/CMakeCCompilerABI.c.o   -c /home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_b5d5b
-/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5d5b.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_b5d5b.dir/CMakeCCompilerABI.c.o  -o cmTC_b5d5b 
+Run Build Command:"/usr/bin/make" "cmTC_d68e7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d68e7.dir/build.make CMakeFiles/cmTC_d68e7.dir/build
+make[1]: вход в каталог «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d68e7.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d68e7.dir/CMakeCCompilerABI.c.o   -c /home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_d68e7
+/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d68e7.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_d68e7.dir/CMakeCCompilerABI.c.o  -o cmTC_d68e7 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -48,24 +48,24 @@ Thread model: posix
 gcc version 7.3.0 (Debian 7.3.0-11) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5d5b' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccplm8wK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b5d5b /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_b5d5b.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5d5b' '-mtune=generic' '-march=x86-64'
-make[1]: выход из каталога «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d68e7' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cco9wFQT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d68e7 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_d68e7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d68e7' '-mtune=generic' '-march=x86-64'
+make[1]: выход из каталога «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_b5d5b/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_b5d5b.dir/build.make CMakeFiles/cmTC_b5d5b.dir/build]
-  ignore line: [make[1]: вход в каталог «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»]
-  ignore line: [Building C object CMakeFiles/cmTC_b5d5b.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_b5d5b.dir/CMakeCCompilerABI.c.o   -c /home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_b5d5b]
-  ignore line: [/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5d5b.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_b5d5b.dir/CMakeCCompilerABI.c.o  -o cmTC_b5d5b ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d68e7/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d68e7.dir/build.make CMakeFiles/cmTC_d68e7.dir/build]
+  ignore line: [make[1]: вход в каталог «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»]
+  ignore line: [Building C object CMakeFiles/cmTC_d68e7.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_d68e7.dir/CMakeCCompilerABI.c.o   -c /home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_d68e7]
+  ignore line: [/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d68e7.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_d68e7.dir/CMakeCCompilerABI.c.o  -o cmTC_d68e7 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -77,13 +77,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.3.0 (Debian 7.3.0-11) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5d5b' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccplm8wK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b5d5b /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_b5d5b.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d68e7' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cco9wFQT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d68e7 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_d68e7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccplm8wK.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cco9wFQT.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -99,7 +99,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_b5d5b] ==> ignore
+    arg [cmTC_d68e7] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -111,7 +111,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_b5d5b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_d68e7.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -139,17 +139,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e688b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e688b.dir/build.make CMakeFiles/cmTC_e688b.dir/build
-make[1]: вход в каталог «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_e688b.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_e688b.dir/feature_tests.c.o   -c /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_e688b
-/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e688b.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_e688b.dir/feature_tests.c.o  -o cmTC_e688b 
-make[1]: выход из каталога «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_a7434/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a7434.dir/build.make CMakeFiles/cmTC_a7434.dir/build
+make[1]: вход в каталог «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a7434.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_a7434.dir/feature_tests.c.o   -c "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_a7434
+/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7434.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_a7434.dir/feature_tests.c.o  -o cmTC_a7434 
+make[1]: выход из каталога «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -159,17 +159,17 @@ make[1]: выход из каталога «/home/toxaxab/CLionProjects/LZW/cmak
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_26c6f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_26c6f.dir/build.make CMakeFiles/cmTC_26c6f.dir/build
-make[1]: вход в каталог «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_26c6f.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_26c6f.dir/feature_tests.c.o   -c /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_26c6f
-/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26c6f.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_26c6f.dir/feature_tests.c.o  -o cmTC_26c6f 
-make[1]: выход из каталога «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_7a3cd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7a3cd.dir/build.make CMakeFiles/cmTC_7a3cd.dir/build
+make[1]: вход в каталог «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_7a3cd.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_7a3cd.dir/feature_tests.c.o   -c "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_7a3cd
+/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a3cd.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_7a3cd.dir/feature_tests.c.o  -o cmTC_7a3cd 
+make[1]: выход из каталога «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -179,17 +179,17 @@ make[1]: выход из каталога «/home/toxaxab/CLionProjects/LZW/cmak
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_927af/fast"
-/usr/bin/make -f CMakeFiles/cmTC_927af.dir/build.make CMakeFiles/cmTC_927af.dir/build
-make[1]: вход в каталог «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_927af.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_927af.dir/feature_tests.c.o   -c /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_927af
-/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_927af.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_927af.dir/feature_tests.c.o  -o cmTC_927af 
-make[1]: выход из каталога «/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_a5005/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a5005.dir/build.make CMakeFiles/cmTC_a5005.dir/build
+make[1]: вход в каталог «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a5005.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_a5005.dir/feature_tests.c.o   -c "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_a5005
+/home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5005.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_a5005.dir/feature_tests.c.o  -o cmTC_a5005 
+make[1]: выход из каталога «/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: C_FEATURE:1c_function_prototypes

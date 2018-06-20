@@ -1,4 +1,4 @@
-# Install script for directory: /home/toxaxab/CLionProjects/LZW
+# Install script for directory: /home/toxaxab/Рабочий стол/LZW-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/toxaxab/CLionProjects/LZW/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

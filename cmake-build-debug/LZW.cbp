@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/toxaxab/CLionProjects/LZW/cmake-build-debug"/>
+				<Option working_dir="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/toxaxab/CLionProjects/LZW/cmake-build-debug"/>
+				<Option working_dir="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/toxaxab/CLionProjects/LZW/cmake-build-debug"/>
+				<Option working_dir="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LZW">
-				<Option output="/home/toxaxab/CLionProjects/LZW/cmake-build-debug/LZW" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/toxaxab/CLionProjects/LZW/cmake-build-debug"/>
+				<Option output="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/LZW" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +51,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 LZW"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 LZW"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LZW/fast">
-				<Option output="/home/toxaxab/CLionProjects/LZW/cmake-build-debug/LZW" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/toxaxab/CLionProjects/LZW/cmake-build-debug"/>
+				<Option output="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/LZW" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,32 +71,32 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 LZW/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/CLionProjects/LZW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 LZW/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/toxaxab/Рабочий\ стол/LZW-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/toxaxab/CLionProjects/LZW/bits.c">
+		<Unit filename="/home/toxaxab/Рабочий стол/LZW-master/bits.c">
 			<Option target="LZW"/>
 		</Unit>
-		<Unit filename="/home/toxaxab/CLionProjects/LZW/bits.h">
+		<Unit filename="/home/toxaxab/Рабочий стол/LZW-master/bits.h">
 			<Option target="LZW"/>
 		</Unit>
-		<Unit filename="/home/toxaxab/CLionProjects/LZW/coder.c">
+		<Unit filename="/home/toxaxab/Рабочий стол/LZW-master/coder.c">
 			<Option target="LZW"/>
 		</Unit>
-		<Unit filename="/home/toxaxab/CLionProjects/LZW/decoder.c">
+		<Unit filename="/home/toxaxab/Рабочий стол/LZW-master/decoder.c">
 			<Option target="LZW"/>
 		</Unit>
-		<Unit filename="/home/toxaxab/CLionProjects/LZW/define.h">
+		<Unit filename="/home/toxaxab/Рабочий стол/LZW-master/define.h">
 			<Option target="LZW"/>
 		</Unit>
-		<Unit filename="/home/toxaxab/CLionProjects/LZW/main.c">
+		<Unit filename="/home/toxaxab/Рабочий стол/LZW-master/main.c">
 			<Option target="LZW"/>
 		</Unit>
-		<Unit filename="/home/toxaxab/CLionProjects/LZW/CMakeLists.txt">
+		<Unit filename="/home/toxaxab/Рабочий стол/LZW-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

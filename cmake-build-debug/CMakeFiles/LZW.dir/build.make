@@ -43,10 +43,10 @@ RM = /home/toxaxab/Программы/CLion-2018.1.3/clion-2018.1.3/bin/cmake/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/toxaxab/CLionProjects/LZW
+CMAKE_SOURCE_DIR = "/home/toxaxab/Рабочий стол/LZW-master"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/toxaxab/CLionProjects/LZW/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LZW.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/LZW.dir/flags.make
 
 CMakeFiles/LZW.dir/coder.c.o: CMakeFiles/LZW.dir/flags.make
 CMakeFiles/LZW.dir/coder.c.o: ../coder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LZW.dir/coder.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LZW.dir/coder.c.o   -c /home/toxaxab/CLionProjects/LZW/coder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LZW.dir/coder.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LZW.dir/coder.c.o   -c "/home/toxaxab/Рабочий стол/LZW-master/coder.c"
 
 CMakeFiles/LZW.dir/coder.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LZW.dir/coder.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/toxaxab/CLionProjects/LZW/coder.c > CMakeFiles/LZW.dir/coder.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/toxaxab/Рабочий стол/LZW-master/coder.c" > CMakeFiles/LZW.dir/coder.c.i
 
 CMakeFiles/LZW.dir/coder.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LZW.dir/coder.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/toxaxab/CLionProjects/LZW/coder.c -o CMakeFiles/LZW.dir/coder.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/toxaxab/Рабочий стол/LZW-master/coder.c" -o CMakeFiles/LZW.dir/coder.c.s
 
 CMakeFiles/LZW.dir/coder.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/LZW.dir/coder.c.o.provides.build: CMakeFiles/LZW.dir/coder.c.o
 
 CMakeFiles/LZW.dir/decoder.c.o: CMakeFiles/LZW.dir/flags.make
 CMakeFiles/LZW.dir/decoder.c.o: ../decoder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LZW.dir/decoder.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LZW.dir/decoder.c.o   -c /home/toxaxab/CLionProjects/LZW/decoder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LZW.dir/decoder.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LZW.dir/decoder.c.o   -c "/home/toxaxab/Рабочий стол/LZW-master/decoder.c"
 
 CMakeFiles/LZW.dir/decoder.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LZW.dir/decoder.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/toxaxab/CLionProjects/LZW/decoder.c > CMakeFiles/LZW.dir/decoder.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/toxaxab/Рабочий стол/LZW-master/decoder.c" > CMakeFiles/LZW.dir/decoder.c.i
 
 CMakeFiles/LZW.dir/decoder.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LZW.dir/decoder.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/toxaxab/CLionProjects/LZW/decoder.c -o CMakeFiles/LZW.dir/decoder.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/toxaxab/Рабочий стол/LZW-master/decoder.c" -o CMakeFiles/LZW.dir/decoder.c.s
 
 CMakeFiles/LZW.dir/decoder.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/LZW.dir/decoder.c.o.provides.build: CMakeFiles/LZW.dir/decoder.c.o
 
 CMakeFiles/LZW.dir/main.c.o: CMakeFiles/LZW.dir/flags.make
 CMakeFiles/LZW.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LZW.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LZW.dir/main.c.o   -c /home/toxaxab/CLionProjects/LZW/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LZW.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LZW.dir/main.c.o   -c "/home/toxaxab/Рабочий стол/LZW-master/main.c"
 
 CMakeFiles/LZW.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LZW.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/toxaxab/CLionProjects/LZW/main.c > CMakeFiles/LZW.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/toxaxab/Рабочий стол/LZW-master/main.c" > CMakeFiles/LZW.dir/main.c.i
 
 CMakeFiles/LZW.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LZW.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/toxaxab/CLionProjects/LZW/main.c -o CMakeFiles/LZW.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/toxaxab/Рабочий стол/LZW-master/main.c" -o CMakeFiles/LZW.dir/main.c.s
 
 CMakeFiles/LZW.dir/main.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/LZW.dir/main.c.o.provides.build: CMakeFiles/LZW.dir/main.c.o
 
 CMakeFiles/LZW.dir/bits.c.o: CMakeFiles/LZW.dir/flags.make
 CMakeFiles/LZW.dir/bits.c.o: ../bits.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LZW.dir/bits.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LZW.dir/bits.c.o   -c /home/toxaxab/CLionProjects/LZW/bits.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LZW.dir/bits.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LZW.dir/bits.c.o   -c "/home/toxaxab/Рабочий стол/LZW-master/bits.c"
 
 CMakeFiles/LZW.dir/bits.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LZW.dir/bits.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/toxaxab/CLionProjects/LZW/bits.c > CMakeFiles/LZW.dir/bits.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/toxaxab/Рабочий стол/LZW-master/bits.c" > CMakeFiles/LZW.dir/bits.c.i
 
 CMakeFiles/LZW.dir/bits.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LZW.dir/bits.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/toxaxab/CLionProjects/LZW/bits.c -o CMakeFiles/LZW.dir/bits.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/toxaxab/Рабочий стол/LZW-master/bits.c" -o CMakeFiles/LZW.dir/bits.c.s
 
 CMakeFiles/LZW.dir/bits.c.o.requires:
 
@@ -169,7 +169,7 @@ LZW: CMakeFiles/LZW.dir/main.c.o
 LZW: CMakeFiles/LZW.dir/bits.c.o
 LZW: CMakeFiles/LZW.dir/build.make
 LZW: CMakeFiles/LZW.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable LZW"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable LZW"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LZW.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/LZW.dir/clean:
 .PHONY : CMakeFiles/LZW.dir/clean
 
 CMakeFiles/LZW.dir/depend:
-	cd /home/toxaxab/CLionProjects/LZW/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/toxaxab/CLionProjects/LZW /home/toxaxab/CLionProjects/LZW /home/toxaxab/CLionProjects/LZW/cmake-build-debug /home/toxaxab/CLionProjects/LZW/cmake-build-debug /home/toxaxab/CLionProjects/LZW/cmake-build-debug/CMakeFiles/LZW.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/toxaxab/Рабочий стол/LZW-master" "/home/toxaxab/Рабочий стол/LZW-master" "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug" "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug" "/home/toxaxab/Рабочий стол/LZW-master/cmake-build-debug/CMakeFiles/LZW.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/LZW.dir/depend
 

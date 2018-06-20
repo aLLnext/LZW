@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/toxaxab/CLionProjects/LZW/bits.c
+/home/toxaxab/Рабочий стол/LZW-master/bits.c
 stdio.h
 -
 stdlib.h
 -
 bits.h
-/home/toxaxab/CLionProjects/LZW/bits.h
+/home/toxaxab/Рабочий стол/LZW-master/bits.h
 
-/home/toxaxab/CLionProjects/LZW/bits.h
+/home/toxaxab/Рабочий стол/LZW-master/bits.h
 bits/types/FILE.h
 -
 stdio.h
@@ -22,7 +22,7 @@ stdio.h
 stdlib.h
 -
 
-/home/toxaxab/CLionProjects/LZW/coder.c
+/home/toxaxab/Рабочий стол/LZW-master/coder.c
 stdio.h
 -
 ctype.h
@@ -32,23 +32,23 @@ stdlib.h
 memory.h
 -
 define.h
-/home/toxaxab/CLionProjects/LZW/define.h
+/home/toxaxab/Рабочий стол/LZW-master/define.h
 
-/home/toxaxab/CLionProjects/LZW/decoder.c
+/home/toxaxab/Рабочий стол/LZW-master/decoder.c
 stdio.h
 -
 memory.h
 -
 define.h
-/home/toxaxab/CLionProjects/LZW/define.h
+/home/toxaxab/Рабочий стол/LZW-master/define.h
 
-/home/toxaxab/CLionProjects/LZW/define.h
+/home/toxaxab/Рабочий стол/LZW-master/define.h
 stdio.h
 -
 memory.h
 -
 bits.h
-/home/toxaxab/CLionProjects/LZW/bits.h
+/home/toxaxab/Рабочий стол/LZW-master/bits.h
 
-/home/toxaxab/CLionProjects/LZW/main.c
+/home/toxaxab/Рабочий стол/LZW-master/main.c
 
