@@ -32,7 +32,6 @@ void del_Heap() {
 
 int get_value(long long pos){
     static char CUR[BUF_SIZE];
-    memset(CUR, '\0', BUF_SIZE);
     int i = 0;
     CUR[i] = HEAP_D[pos].val;
     while (pos != HEAP_D[pos].val){
@@ -44,7 +43,6 @@ int get_value(long long pos){
 
 void print_symbol(long long pos) {
     static char CUR[BUF_SIZE];
-    memset(CUR, '\0', BUF_SIZE);
     int i = 0;
     CUR[i] = HEAP_D[pos].val;
     while (pos != HEAP_D[pos].val){
@@ -57,19 +55,16 @@ void print_symbol(long long pos) {
 }
 
 int read_code(unsigned int *cur, t_stream *stream, int count_size) {
-    //printf("Rbits : %d\n", countb + 1);
     *cur = 0;
     int bit = 0;
     for (int i = countb; i >= 0; --i) {
         bit = fread_bit(stream);
-        //printf("%d",bit);
         if (bit == 1)
             *cur |= 1 << i;
         else if(bit == 0)
             *cur &= ~(1 << i);
         else return 1;
     }
-    //printf(" %c\n",*cur);
 }
 
 int decode() {
